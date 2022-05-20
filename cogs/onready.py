@@ -26,7 +26,7 @@ class OnReady(commands.Cog):
     @commands.Cog.listener()
     async def node_connect(self):
         await self.client.wait_until_ready()
-        await wavelink.NodePool.create_node(bot=self.client, host='node01.marshalxp.xyz', port=443, password='marshal', https=True, 
+        await wavelink.NodePool.create_node(bot=self.client, host='lavalink.darrenofficial.com', port=80, password='abc', https=False, 
                                             spotify_client=spotify.SpotifyClient(
                                             client_id="c4b2ef8bb883486085afae13173b89f7", 
                                             client_secret="569877bf68ae4d5e8c401d4db1c35681")

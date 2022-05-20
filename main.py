@@ -66,7 +66,7 @@ async def on_wavelink_track_end(player: wavelink.Player, track: wavelink.Track, 
         await client.change_presence(status=nextcord.Status.online, 
                                             activity=nextcord.Game("Life Simulator"))
 
-@client.command(name="Play", aliases=["Puterrr"])
+@client.command(aliases=["Puterrr"])
 async def play(ctx: commands.Context, *, search: wavelink.YouTubeTrack):
     
     if not getattr(ctx.author.voice, "channel", None):
@@ -396,5 +396,5 @@ async def queue(ctx: commands.Context):
     
     return await ctx.send(embed=em)
 
-
-client.run(os.environ["DISCORD_TOKEN"])
+client.run('OTQ5ODUwNDAwNDY5NzAwNjMw.G6aG6c.iMf1RkqZ1nutHulogr4HWiEXdo_MahO4fz-0Y4')
+# client.run(os.environ["DISCORD_TOKEN"])
