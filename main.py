@@ -397,4 +397,4 @@ async def queue(ctx: commands.Context):
     return await ctx.send(embed=em)
 
 
-client.run('OTQ5ODUwNDAwNDY5NzAwNjMw.YiQXHg.Tn_sLTIDWZMyefm9KjZQcyF-vDI')
+client.run(os.environ["DISCORD_TOKEN"])
